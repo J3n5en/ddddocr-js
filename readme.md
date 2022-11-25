@@ -14,8 +14,8 @@ import Ddddocr from "ddddocr";
 
 const img = "/xxxx=="
 Ddddocr.create().then(async ddddocr => {
-  const ddddocr = await classification(Buffer.from(img, "base64"));
-  console.log(ddddocr)
+  const result = await ddddocr.classification(Buffer.from(img, "base64"));
+  console.log(result)
 })
 ```
 
@@ -25,7 +25,7 @@ import Ddddocr from "ddddocr";
 
 const img = "/xxxx=="
 Ddddocr.create({charsetsPath:"/xxx",onnxPath:"xxx"}).then(async ddddocr => {
-  const ddddocr = await classification(Buffer.from(img, "base64"));
-  console.log(ddddocr)
+  const result = await ddddocr.classification(Buffer.from(img, "base64"));
+  console.log(result)
 })
 ```
