@@ -1,0 +1,25 @@
+{
+  "name": "ddddocr",
+  "version": "1.0.0",
+  "description": "dddd ocr nodejs version",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "release": "tsc && npm publish"
+  },
+  "keywords": [
+    "dddd",
+    "ocr",
+    "ddddocr"
+  ],
+  "author": "J3n5en",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.16.2",
+    "onnxruntime-node": "^1.13.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
